@@ -1,0 +1,22 @@
+.text
+
+.globl main
+
+main:
+
+	la $t1, ddda
+	la $t4, tre
+
+	lw $t2, ($t1)
+	lw $t3, ($t4)
+
+	
+	li $v0,10 
+	syscall
+
+
+
+.data
+
+ddda:	.ascii "Hello"
+tre:	.ascii "worln"
